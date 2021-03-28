@@ -22,8 +22,6 @@ const OrderBook = ({ orders }) => {
                 <TableData>{order.amount - order.filled}</TableData>
                 <TableData>{order.price}</TableData>
                 <TableData>
-                  {/* <Moment fromNow>{parseInt(order.date) * 1000}</Moment> */}
-
                   <Moment format="YYYY/MM/DD HH:mm">
                     {parseInt(order.date) * 1000}
                   </Moment>
@@ -33,31 +31,6 @@ const OrderBook = ({ orders }) => {
           </TableBodyWrapper>
         </TableWrapper>
       </Table>
-      // <Table>
-      //   <thead>
-      //     <TableRow>
-      //       <Header className={className}>{side}</Header>
-      //     </TableRow>
-      //     <TableRow>
-      //       <TableHeader>amount</TableHeader>
-      //       <TableHeader>price</TableHeader>
-      //       <TableHeader>timestamp</TableHeader>
-      //     </TableRow>
-      //   </thead>
-      //   <tbody>
-      //     <TableBody>
-      //       {orders.map((order) => (
-      //         <TableRow key={order.id}>
-      //           <TableData>{order.amount - order.filled}</TableData>
-      //           <TableData>{order.price}</TableData>
-      //           <TableData>
-      //             <Moment fromNow>{parseInt(order.date) * 1000}</Moment>
-      //           </TableData>
-      //         </TableRow>
-      //       ))}
-      //     </TableBody>
-      //   </tbody>
-      // </Table>
     );
   };
 
@@ -177,49 +150,5 @@ const TableData = styled.div`
   border: 1px solid #000;
   font-size: 0.8rem;
 `;
-
-// const Table = styled.table`
-//   /* border: 1px solid red; */
-
-//   width: 100% !important;
-// `;
-
-// const TableRow = styled.tr`
-//   /* border: 1px solid red; */
-
-//   display: flex;
-// `;
-
-// const Header = styled.th`
-//   /* border: 1px solid red; */
-
-//   width: 100% !important;
-//   padding: 10px;
-//   font-weight: 800;
-// `;
-
-// const TableHeader = styled.th`
-//   /* border: 1px solid red; */
-
-//   width: 100% !important;
-//   padding: 10px;
-//   border: 1px solid #000;
-//   font-size: 0.8rem;
-//   font-weight: 800;
-// `;
-
-// const TableData = styled.td`
-//   /* border: 1px solid red; */
-
-//   width: 100% !important;
-//   padding: 10px;
-//   border: 1px solid #000;
-//   font-size: 0.8rem;
-// `;
-
-// const TableBody = styled.div`
-//   max-height: 100px;
-//   overflow: auto;
-// `;
 
 export default OrderBook;

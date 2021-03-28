@@ -3,6 +3,8 @@
 
 ## Decentralized Exchange on Ethereum
 
+### Built with Solidity, Truffle Framework, Styled Component, Recharts, and deployed with Firebase
+
 - Wrote Smart Contract using Solidity with ERC-20 Token Standard and SafeMath from OpenZeppelin library.
 
 - Wrote tests for the Smart Contract using Truffle Framework to confirm all the functionalities work thoroughly.
@@ -15,4 +17,8 @@
 
 - Created chart component using recharts library for displaying the real time charts for each token.
 
-- Deployed the Smart Contract on Rinkeby Testnet.
+- Deployed the Smart Contract on Rinkeby Testnet with Truffle Framework.
+
+- Deployed the application with Firebase.
+
+You can check the application from <a href="https://dapp-dex.web.app/" target="_blank">here</a>.

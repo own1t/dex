@@ -20,8 +20,6 @@ const TradeBook = ({ trades }) => {
                 <TableData>{trade.amount}</TableData>
                 <TableData>{trade.price}</TableData>
                 <TableData>
-                  {/* <Moment fromNow>{parseInt(trade.date) * 1000}</Moment> */}
-
                   <Moment format="YYYY/MM/DD HH:mm">
                     {parseInt(trade.date) * 1000}
                   </Moment>
@@ -31,28 +29,6 @@ const TradeBook = ({ trades }) => {
           </TableBodyWrapper>
         </TableWrapper>
       </Table>
-      // <Table>
-      //   <thead>
-      //     <TableRow>
-      //       <TableHeader>amount</TableHeader>
-      //       <TableHeader>price</TableHeader>
-      //       <TableHeader>timestamp</TableHeader>
-      //     </TableRow>
-      //   </thead>
-      //   <tbody>
-      //     <TableBody>
-      //       {trades.map((trade) => (
-      //         <TableRow key={trade.tradeId}>
-      //           <TableData>{trade.amount}</TableData>
-      //           <TableData>{trade.price}</TableData>
-      //           <TableData>
-      //             <Moment fromNow>{parseInt(trade.date) * 1000}</Moment>
-      //           </TableData>
-      //         </TableRow>
-      //       ))}
-      //     </TableBody>
-      //   </tbody>
-      // </Table>
     );
   };
 
@@ -126,41 +102,5 @@ const TableData = styled.div`
   border: 1px solid #000;
   font-size: 0.8rem;
 `;
-
-// const Table = styled.table`
-//   /* border: 1px solid red; */
-
-//   width: 100% !important;
-// `;
-
-// const TableRow = styled.tr`
-//   /* border: 1px solid red; */
-
-//   display: flex;
-// `;
-
-// const TableHeader = styled.th`
-//   /* border: 1px solid red; */
-
-//   width: 100% !important;
-//   padding: 10px;
-//   border: 1px solid #000;
-//   font-size: 0.8rem;
-//   font-weight: 800;
-// `;
-
-// const TableData = styled.td`
-//   /* border: 1px solid red; */
-
-//   width: 100% !important;
-//   padding: 10px;
-//   border: 1px solid #000;
-//   font-size: 0.8rem;
-// `;
-
-// const TableBody = styled.div`
-//   max-height: 100px;
-//   overflow: auto;
-// `;
 
 export default TradeBook;
