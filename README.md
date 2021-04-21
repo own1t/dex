@@ -13,8 +13,6 @@
 
 - Built front end using ReactJS and Styled Components to allow users to interact with the Smart Contract and maximize the loading speed.
 
-- Implemented Metamask Wallet to allow users to interact with the exchange.
-
 - Created chart component using recharts library for displaying the real time charts for each token.
 
 - Deployed the Smart Contract on Rinkeby Testnet with Truffle Framework.
