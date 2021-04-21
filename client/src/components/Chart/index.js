@@ -1,6 +1,5 @@
 import React from "react";
 
-import styled from "styled-components";
 import {
   ResponsiveContainer,
   LineChart,
@@ -9,6 +8,8 @@ import {
   XAxis,
   YAxis,
 } from "recharts";
+
+import { ChartContainer, ChartWrapper, ChartHeader } from "./ChartElements";
 
 const Chart = ({ trades, user }) => {
   const renderChart = (trades) => {
@@ -37,22 +38,5 @@ const Chart = ({ trades, user }) => {
     </ChartContainer>
   );
 };
-
-const ChartContainer = styled.div`
-  /* border: 1px solid red; */
-
-  height: 35%;
-  margin: 10px;
-  padding: 30px;
-  border: 1px solid gray;
-`;
-
-const ChartHeader = styled.h2`
-  margin-bottom: 15px;
-  border-bottom: 5px solid var(--blue-soft);
-  font-size: 1.5rem;
-`;
-
-const ChartWrapper = styled.div``;
 
 export default Chart;

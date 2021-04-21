@@ -1,6 +1,7 @@
 import React from "react";
-import styled from "styled-components";
-import Dropdown from "./Dropdown";
+
+import { HeaderContainer, HeaderLeft, HeaderRight } from "./HeaderElements";
+import Dropdown from "../Dropdown";
 
 const Header = ({ user, tokens, selectToken }) => {
   return (
@@ -22,22 +23,5 @@ const Header = ({ user, tokens, selectToken }) => {
     </HeaderContainer>
   );
 };
-
-const HeaderContainer = styled.header`
-  /* border: 1px solid red; */
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 10px;
-  margin-bottom: 5px;
-`;
-
-const HeaderLeft = styled.div``;
-
-const HeaderRight = styled.div`
-  margin-left: auto;
-  margin-right: 25px;
-`;
 
 export default Header;

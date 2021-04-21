@@ -6,7 +6,7 @@ import OrderBook from "../components/OrderBook";
 import Header from "../components/Header";
 import NewOrder from "../components/NewOrder";
 import Wallet from "../components/Wallet";
-import MyOrders from "../components/MyOrders";
+import MyOrders from "../components/MyOrder";
 import TradeBook from "../components/TradeBook";
 import Chart from "../components/Chart";
 import AppInfo from "../components/AppInfo";
