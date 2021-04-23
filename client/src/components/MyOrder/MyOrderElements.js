@@ -78,6 +78,10 @@ export const TableRow = styled.div`
   /* border: 1px solid red; */
 
   display: flex;
+
+  &:hover {
+    background: rgba(0, 0, 0, 1);
+  }
 `;
 
 export const Header = styled.div`
@@ -94,6 +98,7 @@ export const TableHeader = styled.div`
   width: 100% !important;
   padding: 10px;
   border: 1px solid #000;
+  background: rgba(0, 0, 0, 0.5);
   font-size: 0.8rem;
   font-weight: 800;
 `;

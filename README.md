@@ -19,4 +19,6 @@
 
 - Deployed the application with Firebase.
 
-You can check the application from <a href="https://dapp-dex.web.app/" target="_blank">here</a>.
+You can check the application from <a href="https://dapp-dex.web.app/">here</a>.
+
+Check out the Video Demo from <a href="https://vimeo.com/540614013">here</a>.
